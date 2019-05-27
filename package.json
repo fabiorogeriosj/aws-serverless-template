@@ -1,0 +1,40 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "https://github.com/serverless/serverless",
+  "main": "handler.js",
+  "scripts": {
+    "start": "serverless offline start",
+    "debug": "cross-env NODE_ENV=development SLS_DEBUG=* node --inspect ./node_modules/serverless/bin/serverless offline start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/fabiorogeriosj/aws-serverless-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/fabiorogeriosj/aws-serverless-template/issues"
+  },
+  "homepage": "https://gitlab.com/fabiorogeriosj/aws-serverless-template#README",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "serverless": "^1.28.0",
+    "standard": "^11.0.1",
+    "serverless-offline": "^3.25.6",
+    "serverless-offline-scheduler": "^0.3.7"
+  },
+  "standard": {
+    "global": [
+      "describe",
+      "beforeAll",
+      "test",
+      "it",
+      "expect",
+      "afterAll"
+    ]
+  },
+  "jest": {
+    "verbose": false
+  }
+}
